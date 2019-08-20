@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cloud-gateway-eureka
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8001/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

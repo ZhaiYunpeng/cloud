@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: consumer
+server:
+  port: 8020
+eureka:
+  client:
+    service-url:
+      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8001/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
+feign:
+  hystrix:
+    enabled: true
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: '*'
+      endpoint:
+        health:
+          show-details: ALWAYS
