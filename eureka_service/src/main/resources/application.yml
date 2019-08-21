@@ -9,34 +9,35 @@ eureka:
     register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://db-p1000031668.ZZYT.com:8001/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
+      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/
+#      defaultZone: http://db-p1000031668.ZZYT.com:8001/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
 
----
-spring:
-  application:
-    name: eureka_server
-  profiles: eureka2
-server:
-  port: 8001
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: false
-    service-url:
-      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
----
-spring:
-  application:
-    name: eureka_server
-  profiles: eureka3
-server:
-  port: 8002
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: false
-    service-url:
-      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8001/eureka/
+#---
+#spring:
+#  application:
+#    name: eureka_server
+#  profiles: eureka2
+#server:
+#  port: 8001
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8002/eureka/
+#---
+#spring:
+#  application:
+#    name: eureka_server
+#  profiles: eureka3
+#server:
+#  port: 8002
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/,http://db-p1000031668.ZZYT.com:8001/eureka/
 
 
 
