@@ -24,9 +24,7 @@
     <modules>
         <module>eureka_service</module>
         <module>producer</module>
-        <module>producer1</module>
         <module>consumer</module>
-        <module>consumer_login</module>
         <module>turbine</module>
     </modules>
 
