@@ -56,6 +56,6 @@
         <table tableName="RS_INDUSTRY_CATEGORY" domainObjectName="RsIndustryCategory"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false"></table>
+               selectByExampleQueryId="false"/>
     </context>
 </generatorConfiguration>
