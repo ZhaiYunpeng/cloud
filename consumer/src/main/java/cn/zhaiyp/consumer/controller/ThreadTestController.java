@@ -1,14 +1,10 @@
 package cn.zhaiyp.consumer.controller;
 
-import cn.zhaiyp.consumer.config.ExecutorConfig;
 import cn.zhaiyp.consumer.service.ThreadServiceTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * @author : Administrator

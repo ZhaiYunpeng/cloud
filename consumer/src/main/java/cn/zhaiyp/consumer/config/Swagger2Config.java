@@ -16,8 +16,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class Swagger2Config {
     /**
      * 添加摘要信息(Docket)
-     *
-     * @return
      */
     @Bean
     public Docket controllerApi() {

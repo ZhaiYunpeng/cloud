@@ -1,7 +1,6 @@
 package cn.zhaiyp.consumer.controller;
 
 import cn.zhaiyp.consumer.config.PropertiesConfig;
-import net.bytebuddy.implementation.Implementation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
