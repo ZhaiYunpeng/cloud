@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://db-p1000031668.ZZYT.com:8000/eureka/
+      defaultZone: http://localhost:8000/eureka/
 turbine:
   appConfig: CONSUMER
   aggregator:

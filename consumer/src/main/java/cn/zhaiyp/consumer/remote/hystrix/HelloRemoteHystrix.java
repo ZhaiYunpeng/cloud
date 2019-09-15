@@ -1,5 +1,6 @@
-package cn.zhaiyp.consumer.service;
+package cn.zhaiyp.consumer.remote.hystrix;
 
+import cn.zhaiyp.consumer.remote.HelloRemote;
 import org.springframework.stereotype.Component;
 
 @Component

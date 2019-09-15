@@ -8,12 +8,13 @@ import org.springframework.stereotype.Component;
  * @author zhaiyp
  */
 @Component
-@ConfigurationProperties(prefix = "config.test")
+@ConfigurationProperties(prefix = "config")
 @PropertySource("classpath:config/config.properties")
 public class PropertiesConfig {
     private String name;
-    private String age;
-    private String sex;
+    private int corePoolSize;
+    private int maxPoolSize;
+    private int queueCapacity;
 
     public String getName() {
         return name;
@@ -23,19 +24,27 @@ public class PropertiesConfig {
         this.name = name;
     }
 
-    public String getAge() {
-        return age;
+    public int getCorePoolSize() {
+        return corePoolSize;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setCorePoolSize(int corePoolSize) {
+        this.corePoolSize = corePoolSize;
     }
 
-    public String getSex() {
-        return sex;
+    public int getMaxPoolSize() {
+        return maxPoolSize;
     }
 
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setMaxPoolSize(int maxPoolSize) {
+        this.maxPoolSize = maxPoolSize;
+    }
+
+    public int getQueueCapacity() {
+        return queueCapacity;
+    }
+
+    public void setQueueCapacity(int queueCapacity) {
+        this.queueCapacity = queueCapacity;
     }
 }
