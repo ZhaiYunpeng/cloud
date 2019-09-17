@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 public class HelloRemoteHystrix implements HelloRemote {
     @Override
     public String hello(String msg) {
-        return "hello" + msg +", this message send failed ";
+        return "hello," + msg +", this message send failed ";
+    }
+
+    @Override
+    public String hello2(String msg) {
+        return "hello2," + msg +", this message send failed ";
     }
 }

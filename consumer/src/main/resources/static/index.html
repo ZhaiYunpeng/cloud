@@ -5,49 +5,72 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
-        table{float: contour;border: 1px}
-        thead{color: aqua}
-        tbody{color: chartreuse}
+        /*.tableDiv{border: 1px;text-align: center;margin: auto}*/
+        .title{
+            margin: auto;
+            text-align: center;
+            border: 2px solid;
+            padding:10px 40px;
+            background:#dddddd;
+            width:350px;
+            border-radius:25px;}
+        table{width: 60%;margin: auto;text-align: center}
+        thead{color: cadetblue}
+        /*tbody{color: darkgrey}*/
+        tbody{color: cornflowerblue}
         tfoot{color: blue}
+        th{width: 50px;}
     </style>
 </head>
 <!--<script type="application/javascript" src="">-->
 <!--    -->
 <!--</script>-->
 <body>
-    <h2>Index.static</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>操作说明</th>
-                <th>测试连接</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>swagger-API</td>
-                <td><a href="http://localhost:8020/swagger-ui.html">测试</a></td>
-            </tr>
-            <tr>
-                <td>服务多线程启动测试</td>
-                <td><a href="/thread/startThread">测试</a></td>
-            </tr>
-            <tr>
-                <td>多窗口卖票测试</td>
-                <td><a href="/thread/saleTicket">测试</a></td>
-            </tr>
-            <tr>
-                <td>webSocket测试</td>
-                <td><a href="/checkCenter/socket/test">测试</a></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>行尾</td>
-                <td>总结</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="title">应用测试连接</div>
+    <br>
+    <div class="tableDiv">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>操作说明</th>
+                    <th>测试连接</th>
+                    <th>测试连接</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>swagger-API</td>
+                    <td><a href="http://zhaiyp.yutong.com:8020/swagger-ui.html" target="_blank">测试</a></td>
+                </tr>
+                <tr>
+                    <td>Cloud 远程调用</td>
+                    <td><a href="/hello/cloud" target="_blank">测试</a></td>
+                </tr>
+                <tr>
+                    <td>hystrix index</td>
+                    <td><a href="/hystrix" target="_blank">测试</a></td>
+                </tr>
+                <tr>
+                    <td>服务多线程启动测试</td>
+                    <td><a href="/thread/startThread" target="_blank">测试</a></td>
+                </tr>
+                <tr>
+                    <td>多窗口卖票测试</td>
+                    <td><a href="/thread/saleTicket" target="_blank">测试</a></td>
+                </tr>
+                <tr>
+                    <td>webSocket测试</td>
+                    <td><a href="/checkCenter/socket/test" target="_blank">测试</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>行尾</td>
+                    <td>总结</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 <!--    <iframe src="https://www.baidu.com" frameborder ="0" marginheight ="0" marginwidth="0"-->
 <!--                        title="数据可视化" allowtransparency="true" width="100%" height="850">-->
 <!--    </iframe>-->

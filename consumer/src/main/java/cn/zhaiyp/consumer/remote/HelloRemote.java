@@ -7,9 +7,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author fkptxmz
+ * 远程调用
  */
 @FeignClient(name = "producer", fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
-    @RequestMapping(value = "/msg")
+    @RequestMapping(value = "/hello/msg")
     String hello(@RequestParam(value = "msg") String msg);
+
+    @RequestMapping(value = "/hello2/msg")
+    String hello2(@RequestParam(value = "msg") String msg);
 }

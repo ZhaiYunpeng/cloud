@@ -34,7 +34,7 @@ public class ThreadTestController {
             threadPoolA.submit(new Runnable() {
                 @Override
                 public void run() {
-                    Thread.currentThread().setName("t1");
+//                    Thread.currentThread().setName("t1");
                     while (true) {
                         if (threadServiceTest.getTotalTicket() > 0) {
                             threadServiceTest.saleTicket(wicketNum);

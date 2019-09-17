@@ -16,4 +16,8 @@ public class ConsumerController {
     public String index(@PathVariable("msg") String msg) {
         return helloRemote.hello(msg);
     }
+    @RequestMapping("/hello2/{msg}")
+    public String index2(@PathVariable("msg") String msg) {
+        return helloRemote.hello2(msg);
+    }
 }

@@ -1,9 +1,16 @@
 spring:
   application:
     name: producer
+  datasource:
+#    hikari:
+#    jdbc-url:
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/myself?serverTimezone=GMT
 server:
   port: 8010
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8000/eureka/
+      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
