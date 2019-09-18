@@ -1,1 +1,20 @@
-
+server:
+  port: 9000
+spring:
+  application:
+    name: config_server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ZhaiYunpeng/SpringCloudConfig
+          default-label: master
+          search-paths: config
+          username:
+          password:
+#          username: azhaiyunpeng@163.com
+#          password: 15290840274ZYP
+eureka:
+  client:
+    service-url:
+      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
