@@ -5,6 +5,17 @@ spring:
     view:
       prefix: /
       suffix: .html
+  cloud:
+    config:
+      name: neo-config
+      profile: dev
+      label: master
+#      discovery:
+##        开启Config服务发现支持
+#        enabled: true
+##        指定server端的name,也就是server端spring: application: name的值:
+#        service-id: config_server
+
 #  datasource:
 #    data-username: root
 #    data-password: mysql
@@ -12,10 +23,10 @@ spring:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 8020
-eureka:
-  client:
-    service-url:
-      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
 feign:
   hystrix:
     enabled: true

@@ -1,0 +1,16 @@
+#spring:
+#  application:
+#    name: eureka_server
+#  cloud:
+#    config:
+#      discovery:
+#        enabled: true
+#        serviceId: config_server
+#eureka:
+#  instance:
+#    hostname: zhaiyp.yutong.com
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: false
+#    service-url:
+#      defaultZone: http://${eureka.instance.hostname}:8000/eureka/

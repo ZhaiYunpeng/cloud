@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/myself?serverTimezone=GMT
 server:
   port: 8010
-eureka:
-  client:
-    service-url:
-      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
