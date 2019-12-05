@@ -8,7 +8,7 @@
 #        serviceId: config_server
 #eureka:
 #  instance:
-#    hostname: zhaiyp.yutong.com
+#    hostname: localhost
 #  client:
 #    register-with-eureka: true
 #    fetch-registry: false

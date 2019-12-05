@@ -13,4 +13,4 @@ server:
 #eureka:
 #  client:
 #    service-url:
-#      defaultZone: http://zhaiyp.yutong.com:8000/eureka/
+#      defaultZone: http://localhost:8000/eureka/
