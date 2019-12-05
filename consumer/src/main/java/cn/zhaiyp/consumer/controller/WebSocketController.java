@@ -26,7 +26,7 @@ public class WebSocketController {
      */
     @GetMapping("/socket/{cid}")
     public ModelAndView socket(@PathVariable String cid) {
-        ModelAndView mav=new ModelAndView("/webSocketTest");
+        ModelAndView mav=new ModelAndView("/html/webSocketTest");
         mav.addObject("cid", cid);
         return mav;
     }
