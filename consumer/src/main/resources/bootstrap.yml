@@ -1,6 +1,9 @@
 spring:
   cloud:
     config:
+      name: neo-config
+      profile: dev
+      label: master
       discovery:
         enabled: true
         serviceId: config_server

@@ -7,11 +7,11 @@ spring:
       suffix: .html
   resources:
     static-locations: classpath:/static
-  cloud:
-    config:
-      name: neo-config
-      profile: dev
-      label: master
+#  cloud:
+#    config:
+#      name: neo-config
+#      profile: dev
+#      label: master
 #      discovery:
 ##        开启Config服务发现支持
 #        enabled: true

@@ -3,6 +3,9 @@ spring:
 #    name: producer
   cloud:
     config:
+      name: neo-config
+      profile: dev
+      label: master
       discovery:
         enabled: true
         serviceId: config_server
