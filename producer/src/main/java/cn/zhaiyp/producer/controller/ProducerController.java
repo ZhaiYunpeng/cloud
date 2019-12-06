@@ -13,7 +13,7 @@ public class ProducerController {
     @Value("${neo.hello}")
     private String configStr;
 
-    @RequestMapping("/hello/msg")
+    @RequestMapping(value = "/hello/msg")
     @ResponseBody
     public String hello(@RequestParam String msg) {
         return configStr + ",This is producer hello,return msg is:" + msg;

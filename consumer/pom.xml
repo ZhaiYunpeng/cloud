@@ -44,6 +44,12 @@
             <version>1.12.1</version>
         </dependency>
 
+        <!--    spring security 权限认证    -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

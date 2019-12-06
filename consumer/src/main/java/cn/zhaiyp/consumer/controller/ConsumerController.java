@@ -20,13 +20,13 @@ public class ConsumerController {
 
     @ApiOperation(value = "/hello/{msg}", notes = "测试1")
     @ApiImplicitParams(@ApiImplicitParam(name = "msg", value = "参数信息", dataType = "String", required=false, paramType="path"))
-    @RequestMapping(value = "/hello/{msg}", method = RequestMethod.POST)
+    @RequestMapping(value = "/hello/{msg}", method = RequestMethod.GET)
     public String index(@PathVariable("msg") String msg) {
         return helloRemote.hello(msg);
     }
 
     @ApiOperation(value = "/hello2/{msg}", notes = "测试2")
-    @RequestMapping(value = "/hello2/{msg}", method = RequestMethod.POST)
+    @RequestMapping(value = "/hello2/{msg}", method = RequestMethod.GET)
     public String index2(@PathVariable("msg") String msg) {
         return helloRemote.hello2(msg);
     }
